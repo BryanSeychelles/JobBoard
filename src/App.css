@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+ /********************************** ERROR ************************************/
+
+.container {
+  position: relative;
+
+}
+
+#row{
+  background-image: url('components/img/forrest.png');
+  
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.square {
+  width: 50%;
+  height: 45%;
+  color: aliceblue;
+  background: #3e5151b2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(76, 121, 37), rgb(243, 150, 28)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(76, 121, 37), gb(243, 150, 28));  
+  margin: 2%;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0.562);
+  animation-duration: 20s;
+  animation-name: Move;
+  animation-iteration-count: infinite;
+}
+
+.square h1{
+  text-align: center;
+  font-size: 8em;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.square h4{
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+
+@keyframes Move {
+  from{
+      transform-origin: O;
+      box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.562);
+  }
+  25%{
+    transform: translate(650px,300px);
+    box-shadow: -10px -5px 5px rgb(0, 0, 0.562);
+  }
+  50%{
+    transform: translateY(300px);
+    box-shadow: 10px -5px 5px rgb(0, 0, 0.562);
+
+
+  }
+  75%{
+      transform: translate(650px,0);
+        box-shadow: -10px 5px 5px rgb(0, 0, 0.562);
+  }
+}
+
+ /********************************** INDEX ************************************/
+
+.forrest {
+  background-image: url('components/img/forrest.png');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#forrest_2 {
+  background-image: url('components/img/forrest.png');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+}
+
+.forrest_3 {
+  background-image: url('components/img/forrest.png');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.board {
+  font-size: 5em;
+  margin-top: 40%;
+  z-index: 1;
+  position: absolute;
+  color: rgb(76, 121, 37);
+}
+
+.job {
+  font-size: 5em;
+  margin-top: 20%;
+  z-index: 1;
+  margin-left: 40%;
+  position: absolute;
+  color: rgb(243, 150, 28);
+}
+
+.blurEffect {
+  background-color: rgba(182, 182, 182, 0.562);
+  width: 50%;
+  z-index: -1;
+  margin-left: 50%;
+  height: 100%;
+  position: relative;
+}
+
+#footer {
+  background-color: rgb(70, 68, 68);
+}
+
+#footerAbs {
+  background-color: rgb(70, 68, 68);
+  margin-top: 35%;
+  z-index: 1;
+}
+
+#copy {
+  text-align: center;
+}
+
+ /********************************** Menu ************************************/
+
+.menu {
+  background-color: rgba(124, 124, 124, 0.26);
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+
+ /****************************** create account *******************************/
+
+#testform_contain {
+  position: relative;
+}
+
+#testForm {
+  position: absolute;
+  text-align: center;
+  height: 97vh;
+  width: 49vw;
+  margin-top: 2%;
+  z-index: 1;
+  box-shadow: -20px 5px 5px rgba(70, 69, 69, 0.624);
+  margin-left: 50%;
+}
+
+.select {
+  width: 100%;
+}
+
+#who {
+  margin-left: 42%;
+}
+
+#forrest_3 {
+  background-image: url('components/img/forrest.png');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1.9%;
+  position: absolute;
+  height: 97vh;
+  width: 50vw;
+  z-index: -1;
+}
+
+
+#FormLogin {
+  position: absolute;
+  text-align: center;
+  height: 97vh;
+  width: 50vw;
+  margin-top: 2%;
+  z-index: 1;
+  box-shadow: 20px 5px 5px rgba(70, 69, 69, 0.624);
+}
+
+#forrest_4 {
+  background-image: url('components/img/forrest.png');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  margin-top: 1.9%;
+  position: absolute;
+  height: 97vh;
+  width: 50vw;
+  margin-left: 50%;
+  z-index: -1;
+}
+
+ /********************************* offers *************************************/
+
+ .container {
+   position: relative;
+   width: auto;
+   height: auto;
+ }
+
+ #search {
+   position: absolute;
+   width: 80%;
+   height: auto;
+   z-index: 1;
+   margin: 10%;
+   margin-top: 2%;
+   display: flex;
+   flex-flow: row;
+ }
+
+#test {
+  background-image: url('components/img/forrest.png');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+}
+
+#row_card {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10%;
+  width: 90vw;
+  height: auto;
+}
+
+#card {
+  margin: 1%;
+}
+
+#nameOffers {
+  font-size: 2em;
+}
+
+#testId {
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+}
+
+
+#row_offer {
+  background-color: orange;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10%;
+  width: 90vw;
+  height: auto;
+}
+
+#offerId{
+  width: 100%;
+}
+
+#params {
+  width: 20%;
+  height: auto;
+  margin-left: 70%;
+  background-color: rgb(109, 108, 108);
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+#niks {
+  width: 20vw;
+  height: 35vh;
+}
+
+.collapse{
+  display: none;
+}
+
+#textOffer{
+  font-size: 1em;
+}
+
+ /******************************* profil users ********************************/
+ #testProfil {
+  background-color: rgba(0, 0, 0, 0.357);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  box-shadow: 1px 15px 15px rgba(245, 245, 245, 0.453);
+  width: 100vw;
+  height: 33vh;
+  display: flex;
+}
+
+ #contain {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  margin: 10%;
+  margin-top: 18%;
+}
+
+ /****************************** admin company *******************************/
+#container_admin{
+  background-color: rgba(76, 121, 37, 0.309);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.presentation {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-top: 1.9%;
+}
+
+#photo{
+  width: 20%;
+  height: auto;
+  position: relative;
+}
+
+#avatar{
+  width: 75%;
+  height: 50%;
+  margin-left: 10%;;
+  border-radius: 100%;
+}
+
+#recently {
+  background-color: rgba(76, 121, 37, 0.309);
+  display: flex;
+  flex-direction: row wrap;
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+}
+
+#card_admin {
+  max-width: 245;
+  max-height: 245;
+  margin: 1%;
+}
+
+#row_recent {
+  position: absolute;
+  margin-top: 12%;
+}
+
+#container_offers{
+  position: absolute;
+  margin-top: 20.8%;
+  width: 100%;
+  height: auto;
+}
+
+#add {
+  width: 100%;
+  height: auto;
+}
+
+#contain_form {
+  position: relative;
+}
+
+#form_offer {
+  position: absolute;
+  width: 85%;
+  margin-top: 2%;
+}
+
+#container_admin_app{
+  background-color: rgba(243, 150, 28, 0.76);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#infos {
+  background-color: rgba(0, 0, 0, 0.179);
+  text-align: center;
+  position: absolute;
+  margin-top: -64%;
+  margin-left: 9.7%;
+  width: 74.5%;
+  height: 97%;
+  border-radius: 100%;
+  z-index: 1;
+  display: none;
+}
+
+#formProfil {
+  position: absolute;
+  margin: 10%;
+  margin-left: 40vw;
+  background-color: rgba(16, 15, 15, 0.022);
+}
+
+@media (max-width: 768px) { 
+  
+  #container_admin {
+    width: 100vw;
+    height: 200vh;
+  }
+
+  #infos{
+    margin-top: -26.3vh;
+  }
+
+  #row_recent {
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    margin-top: 30vh;
+  }
+
+  #recently{
+    height: auto;
+  }
+
+  #container_offers {
+    width: 100%;
+    margin-top: 70%;
+  }
+  #card_admin {
+    height: 40vh;
+  }
+
+  #card_admin:nth-child(-n+5) {
+    display: none;
+  }
+
+  .job{
+    font-size: xx-large;
+    margin-left: 43%;
+  }
+
+  .forrest_3{
+    height: 86vh;
+  }
+
+  .board{
+    font-size: xx-large;
+  }
+
+  #params {
+    width: auto;
+    margin-left: 50%;
+  }
+
+  #niks {
+    width: 10vw;
+    height: 10vh;
+  }
+
+  #offerId {
+    margin-top: 15%;
+  }
+
+  #search{
+    display: none;
+  }
+  .square h1 {
+    font-size: medium;
+  }
+
+    .square h1 {
+    font-size: medium;
+  }
+
+  .square {
+    margin-top: 10%;
+    width: auto;
+    height: auto;
+    animation: none;
+  }
+  #formProfil {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 425px){ 
+  #p {
+    font-size: 0.5em;
+  }
+
+  .job{
+    margin-left: 33%;
+  }
+
+  #text {
+    width: 20%;
+  }
+
+  #niks {
+    width: 10vw;
+    height: 5vh;
+  }
+
+  #offerId {
+    margin-top: 70%;
+  }
+  
+  #testForm {
+    width: 70vw;
+    margin-left: 13%;
+  }
+
+  #forrest_3{
+    width: 10%;
+  }
+
+  #FormLogin {
+    width: 70vw;
+  }
+
+  #forrest_4{
+    width: 30%;
+    margin-left: 70%;
+  }
+
+}
+
+@media (min-width: 425px) and (max-width: 768px) { 
+
+  .job{
+    margin-left: 33%;
+  }
+
+}

@@ -1,0 +1,134 @@
+METHOD	/route			{requestJSON}		{responseJSON}
+				[optional]		[array]
+
+POST	/signup			{type: *,		{status: "Success" or "Failure" with reason: *}
+       				 email: *,
+				 firstName: *,
+				 lastName: *,
+				 companyName: *,
+				 password: *}
+
+PUT	/signin 		{email: *, 		{status: "Success" or "Failure" with reason: *}
+       				 password: *}
+
+GET	/offers 	       [{title: *,	       [{offerId: *,
+							 companyName: *,
+				 country: *,	         companyImg: *,
+				 city: *,  		 title: *,
+				 salary: *}]		 description: *,
+							 country: *,
+							 city: *,
+							 salary: *},
+							{offerId: *,
+							 companyName: *,
+       							 companyImg: *,
+							 title: *,
+							 description: *,
+							 country: *,
+							 city: *,
+							 salary: *},
+							{offerId: *,
+							 companyName: *,
+       							 companyImg: *,
+							 title: *,
+							 description: *,
+							 country: *,
+							 city: *,
+							 salary: *}]
+
+POST	/offer/:id/apply	{}			{status: "Success" or "Failure" with reason: *}
+
+GET	/profile 		{} 			{type: *,
+							 firstName: *,
+       							 lastName: *,
+							 companyName: *,
+							 pictureURL: *,
+							 resumeURL: *,
+							 letterURL: *,
+							 description: *}
+
+							or
+							 
+							{type: *,
+							 companyName: *,
+							 pictureURL: *,
+							 description: *}
+
+PUT    	/profile/edit 		{editedFields: *} 	{status: "Success" or "Failure" with reason: *}
+
+GET   	/account 		{} 	      		{email: *,
+       							 password: ""}
+
+PUT    	/account/edit 		{editedFields: *}	{status: "Success" or "Failure" with reason: *}
+
+DELETE	/account/delete		{}	       		{status: "Success" or "Failure" with reason: *}
+
+GET   	/companies             [{name: *}]		[{companyId: *
+							  companyName: *,
+       							  companyImg: *,
+							  description: *,
+							  country: *},
+       							{{companyId: *
+							  companyName: *,
+							  companyImg: *,
+							  description: *,
+							  country: *},
+							{{companyId: *
+							  companyName: *,
+							  companyImg: *,
+							  description: *,
+							  country: *}]
+
+GET	/company/:id		{}			{companyName: *,
+							 companyImg: *,
+							 description: *,
+							 country: *}
+
+GET	/company/:id/offers	{}			{companyName: *,
+       							 companyImg: *,
+							 title: *,
+							 description: *,
+							 country: *,
+							 salary: *}
+
+POST    /offer/create		{title: *,		{status: "Success" or "Failure" with reason: *}
+				 description: *,
+				 country: *,
+				 city: *,
+				 salary: *}
+
+PUT	/offer/:id/applications	{}	  		[{firstName: *,
+       							  lastName: *,
+							  pictureURL: *,
+							  resumeURL: *,
+							  letterURL: *,
+							  description: *},
+							 {firstName: *,
+       							  lastName: *,
+							  pictureURL: *,
+							  resumeURL: *,
+							  letterURL: *,
+							  description: *},
+							 {firstName: *,
+       							  lastName: *,
+							  pictureURL: *,
+							  resumeURL: *,
+							  letterURL: *,
+							  description: *}]
+
+PUT	/offer/:id/edit		{editedFields: *}	{status: "Success" or "Failure" with reason: *}
+
+DELETE	/offer/:id/delete 	{}	       		{status: "Success" or "Failure" with reason: *}
+
+GET	/admin			{}			{status: "Success" or "Failure" with reason: *}
+
+POST    /admin/user/create	{type: *,		{status: "Success" or "Failure" with reason: *}
+       				 email: *,
+				 firstName: *,
+				 lastName: *,
+				 companyName: *,
+				 password: *}
+
+PUT	/admin/user/:id/edit	{editedFields: *}	{status: "Success" or "Failure" with reason: *}
+
+DELETE	/admin/user/:id/delete	{}	       		{status: "Success" or "Failure" with reason: *}
